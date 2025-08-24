@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Kervin Daniel Leonardo Francois | Portfolio",
-  description: "Portafolio personal de kervin leonardo",
+  description: "Portafolio de Kervin Daniel Leonardo Francois",
 };
 
 export default function RootLayout({

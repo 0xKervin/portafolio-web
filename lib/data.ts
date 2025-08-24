@@ -1,14 +1,3 @@
-// Pendiente
-/**
- Agregar certificaciones, Testimonios ,Experiencia y completar Proyectos.
-
- Proyectos: 
- KODE
- Cuadro Arquitectura
-
- */
-
-
 export interface Project {
   id: number
   title: string
@@ -17,16 +6,6 @@ export interface Project {
   technologies: string[]
   demoUrl?: string
   githubUrl?: string
-}
-
-export interface Testimonial {
-  id: number
-  name: string
-  position: string
-  company: string
-  text: string
-  rating: number
-  avatar?: string
 }
 
 export interface Education {
@@ -59,24 +38,24 @@ export interface SkillWithLogo{
 }
 
 export const projects: Project[] = [
-  {
-    id: 1,
-    title: "Click Venta Point of Sale",
-    description: "Una plataforma de punto de venta para tiendas y pequeños negocios con funcionalidades como el control de inventario, ventas, clientes y control de usuarios y roles en el sistema.",
-    image: "/projects/POS.png",
-    technologies: ["NextJS", "TypeScript","MySQL", "Tailwind CSS"],
-    demoUrl: "https://click-venta-pos.vercel.app/",
-    githubUrl: "https://github.com/Sigmaprogram/click-venta-pos",
-  },
-    {
-    id: 2,
-    title: "Cuadro Arquitectura Landing Page",
-    description: "Landing page para la empresa de arquitectura Cuadro Arquitectura, incluye portafolio de proyectos y servicios.",
-    image: "/projects/CuadroArquitectura.png",
-    technologies: ["Angular", "Tailwind CSS","NodeJS", "MySQL"],
-    demoUrl: "https://cuadro-arquitectura.vercel.app/",
-    githubUrl: "https://github.com/Sigmaprogram/cuadro-arquitectura",
-  },
+  // {
+  //   id: 1,
+  //   title: "Click Venta Point of Sale",
+  //   description: "Una plataforma de punto de venta para tiendas y pequeños negocios con funcionalidades como el control de inventario, ventas, clientes y control de usuarios y roles en el sistema.",
+  //   image: "/projects/POS.png",
+  //   technologies: ["NextJS", "TypeScript","MySQL", "Tailwind CSS"],
+  //   demoUrl: "https://click-venta-pos.vercel.app/",
+  //   githubUrl: "https://github.com/Sigmaprogram/click-venta-pos",
+  // },
+  //   {
+  //   id: 2,
+  //   title: "Cuadro Arquitectura Landing Page",
+  //   description: "Landing page para la empresa de arquitectura Cuadro Arquitectura, incluye portafolio de proyectos y servicios.",
+  //   image: "/projects/CuadroArquitectura.png",
+  //   technologies: ["Angular", "Tailwind CSS","NodeJS", "MySQL"],
+  //   demoUrl: "https://cuadro-arquitectura.vercel.app/",
+  //   githubUrl: "https://github.com/Sigmaprogram/cuadro-arquitectura",
+  // },
   // {
   //   id: 3,
   //   title: "DoFlow Aplicación de Productividad",
@@ -135,32 +114,20 @@ export const projects: Project[] = [
   // }
 ]
 
-// export const testimonials: Testimonial[] = [
-//   {
-//     id: 1,
-//     name: "Ana García",
-//     position: "CEO",
-//     company: "TechSolutions",
-//     text: "Un profesional excepcional. Entregó el proyecto antes de lo previsto y con una calidad superior a la esperada.",
-//     rating: 5,
-//     avatar: "/placeholder.svg?height=100&width=100",
-//   }
-// ]
-
 export const experience: Experience[] = [
-  {
-    company: "Sua Studio",
-    position: "Desarrollador Full Stack",
-    period: "6/25 - 8/25",
-    description:
-      "Desarrollo completo de la aplicación web para el estudio de produccion musical Sua Studio.",
-    achievements: [
-      "Diseño de la landing page",
-      "Desarrollo del frontend",
-      "Desarrollo del backend",
-      "Optimización y CEO",
-    ],
-  },
+  // {
+  //   company: "Sua Studio",
+  //   position: "Desarrollador Full Stack",
+  //   period: "6/25 - 8/25",
+  //   description:
+  //     "Desarrollo completo de la aplicación web para el estudio de produccion musical Sua Studio.",
+  //   achievements: [
+  //     "Diseño de la landing page",
+  //     "Desarrollo del frontend",
+  //     "Desarrollo del backend",
+  //     "Optimización y CEO",
+  //   ],
+  // },
 ]
 
 export const education: Education[] = [
@@ -199,7 +166,7 @@ export const certifications: Certification[] = [
 export const skillsWithLogos: Record<string, SkillWithLogo[]> = {
   Frontend: [
     { name: "React", level: 90, logo: "/skills/react-svgrepo-com.svg" },
-    { name: "Angular", level: 65, logo: "/skills/angular.svg" },
+    // { name: "Angular", level: 65, logo: "/skills/angular.svg" },
     { name: "Next.js", level: 80, logo: "/skills/nextjs.svg" },
     { name: "TypeScript", level: 75, logo: "/skills/typescript-svgrepo-com.svg" },
     { name: "JavaScript", level: 90, logo: "/skills/javascript-svgrepo-com.svg" },
@@ -212,10 +179,10 @@ export const skillsWithLogos: Record<string, SkillWithLogo[]> = {
 
   ],
   Backend: [
-    { name: "Node.js", level: 80, logo: "/skills/nodejs-icon-svgrepo-com.svg" },
+    // { name: "Node.js", level: 80, logo: "/skills/nodejs-icon-svgrepo-com.svg" },
     {name: "Laravel", level: 80, logo: "/skills/laravel-svgrepo-com.svg"},
     {name: "PHP", level: 80, logo: "/skills/php-svgrepo-com.svg"},
-    { name: "Python", level: 60, logo: "/skills/python-svgrepo-com.svg" },
+    // { name: "Python", level: 60, logo: "/skills/python-svgrepo-com.svg" },
     { name: "PostgreSQL", level: 65, logo: "/skills/postgresql-svgrepo-com.svg" },
     { name: "MySQL", level: 65, logo: "/skills/mysql-svgrepo-com.svg" },
     { name: "SQL Server", level: 65, logo: "/skills/microsoft-sql-server.svg" },
@@ -227,19 +194,11 @@ export const skillsWithLogos: Record<string, SkillWithLogo[]> = {
   Tools: [
     { name: "Git", level: 90, logo: "/skills/git-svgrepo-com.svg" },
     {name: "Github", level: 90, logo: "/skills/github.svg"},
-    { name: "Docker", level: 65, logo: "/skills/docker-svgrepo-com.svg" },
+    // { name: "Docker", level: 65, logo: "/skills/docker-svgrepo-com.svg" },
     // { name: "AWS", level: 60, logo: "/skills/aws-svgrepo-com.svg" },
     // { name: "Webpack", level: 70, logo: "/skills/webpack-svgrepo-com.svg" },
     { name: "Figma", level: 80, logo: "/skills/figma-svgrepo-com.svg" },
     { name: "VS Code", level: 95, logo: "/skills/vscode-svgrepo-com.svg" },
 
-  ],
-  Soft: [
-    { name: "Comunicación", level: 90, logo: "/placeholder.svg?text=Com" },
-    { name: "Trabajo en equipo", level: 85, logo: "/placeholder.svg?text=Team" },
-    { name: "Resolución de problemas", level: 90, logo: "/placeholder.svg?text=Problem" },
-    { name: "Gestión del tiempo", level: 80, logo: "/placeholder.svg?text=Time" },
-    { name: "Adaptabilidad", level: 85, logo: "/placeholder.svg?text=Adapt" },
-    { name: "Liderazgo", level: 75, logo: "/placeholder.svg?text=Lead" },
-  ],
+  ]
 }

@@ -100,13 +100,13 @@ export default function Navbar() {
             >
               Proyectos
             </Link>
-            {/* <Link
+            <Link
               href="/experience"
               className="text-lg font-medium"
               onClick={toggleMenu}
             >
-              Experience
-            </Link> */}
+              Experiencia
+            </Link>
             <Link
               href="/skills"
               className="text-lg font-medium"

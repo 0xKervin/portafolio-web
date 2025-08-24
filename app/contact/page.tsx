@@ -20,7 +20,6 @@ import { Textarea } from "@/components/ui/textarea";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
-// ✅ Importa el Toaster
 import { Toaster } from "@/components/ui/toaster";
 
 export default function ContactPage() {
@@ -97,27 +96,30 @@ export default function ContactPage() {
                 </div>
                 <div className="space-y-2">
                   <h3 className="font-medium">Sígueme en</h3>
-                  <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-8">
                     <Link
-                      href="https://github.com/Sigmaprogram"
+                      href="https://github.com/Sigmaprogram/"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      <Button variant="outline" size="icon">
-                        <Github className="h-5 w-5" />
-                      </Button>
+                      <Github className="h-5 w-5 text-primary/90 hover:text-white transition-colors" />
+                      <span className="sr-only">GitHub</span>
                     </Link>
                     <Link
                       href="https://www.linkedin.com/in/kervin-daniel-leonardo-francois-1528b52b0/"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      <Button variant="outline" size="icon">
-                        <Linkedin className="h-5 w-5" />
-                      </Button>
+                      <Linkedin className="h-5 w-5 text-primary/90 hover:text-white transition-colors" />
+                      <span className="sr-only">LinkedIn</span>
                     </Link>
-                    <Link href="https://x.com/Kervin_fr" target="_blank">
-                      <Button variant="outline" size="icon">
-                        <Twitter className="h-5 w-5" />
-                      </Button>
+                    <Link
+                      href="https://x.com/Kervin_fr"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Twitter className="h-5 w-5 text-primary/90 hover:text-white transition-colors" />
+                      <span className="sr-only">Twitter</span>
                     </Link>
                   </div>
                 </div>

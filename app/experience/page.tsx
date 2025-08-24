@@ -24,6 +24,8 @@ export default function ExperiencePage() {
                 </p>
               </div>
             </div>
+
+            {/* REDISEÑAR LA PARTE DE EXPERIENCIA */}
             <div className="mx-auto max-w-3xl mt-12 space-y-8">
               {experience.map((job, index) => (
                 <div key={index} className="flex gap-4">
