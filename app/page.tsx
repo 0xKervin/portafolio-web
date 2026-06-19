@@ -58,16 +58,6 @@ export default function Home() {
                       Ponte en contacto <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    asChild
-                    className="border-dark-600 hover:bg-secondary"
-                  >
-                    <Link href="/docs/cv.pdf" target="_blank">
-                      <Download className="mr-2 h-4 w-4" /> Descargar CV
-                    </Link>
-                  </Button>
                 </div>
                 <div className="flex items-center gap-6">
                   <Link
@@ -96,10 +86,10 @@ export default function Home() {
                 <div className="relative w-80 h-80 lg:w-96 lg:h-96">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent rounded-2xl"></div>
                   <Image
-                    src="me.png"
+                    src="/me.jpg"
                     alt="Foto profesional"
                     fill
-                    className="object-cover rounded-2xl border border-dark-400"
+                    className="object-cover rounded-2xl border border-dark-400 object-top"
                     priority
                   />
                 </div>
